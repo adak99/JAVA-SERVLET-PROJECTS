@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+
+
+
+.parent-cotainer{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contener{
+    background-color: rgba(22, 189, 27, 0.401);
+    width: 500px;
+    height: 470px;
+    border-radius: 30px;
+    
+}
+.h1{
+    text-align: center;
+}
+
+.input-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    padding-right: 8px;
+   
+    
+}
+
+.text_box{
+    border: 1px solid #ccc;
+    padding: 5px 10px; 
+    font-size: 16px; 
+    width: 70%; 
+    box-sizing: border-box;
+}
+
+
+
+.input_last_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+.input_email
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.input_password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.confirm_password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.radio-button{
+    cursor: pointer;
+}
+
+.male{
+    padding-right: 100px;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    
+}
+
+.Check-button{
+    cursor: pointer;
+}
+
+.sbumit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px
+}
+
+.button{
+    width:150px;
+    height: 28px;
+    border:none;
+    border-radius:40px;
+    background-color: #f6f9f8;
+    color: black;
+    font-size:15px;
+    font-weight: 34px;
+    align-content:center;
+    cursor: pointer;
+    transition:0.1s;    
+}
+.button:hover{
+    opacity: 0.7;
+}
+
+.button:active{
+    opacity: o.5s;
+}
+
+
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Add icon library -->
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="parent-cotainer">
+		<div class="contener">
+			<h1 class="h1">Registration Form</h1>
+			<div>
+				<form action="Addition_project1" method="post">
+					<!--!Input name--> 
+					<div class="input-name">
+						<div class="icon"><i class="fa fa-user"></i></div>
+						<input type="text" placeholder="First Name" class="text_box" name="firstName">
+					</div>
+					<!-- input last name -->
+					<div class="input_last_name">
+						<div class="icon"><i class="fa fa-user"></i></div>
+						<input type="text" placeholder="Last Name" class="text_box" name="lastName">
+					</div>
+					<div class="input_email">
+						<div class="icon"><i class="fa fa-phone"></i></div>
+						<input type="text" placeholder="Mobile number" class="text_box" name="mobileNumber">
+					</div>
+					<!-- Enter email -->
+					<div class="input_email">
+						<div class="icon"><i class="fa fa-envelope email"></i></div>
+						<input type="email" placeholder="email" class="text_box" name="email">
+					</div>
+					<!-- input passowr -->
+					<div class="input_password">
+						<div class="icon"><i class="fa fa-lock lock"></i></div>
+						<input type="password" placeholder="Password" class="text_box">
+					</div>
+					<!-- Input confirm password -->
+					<div class="confirm_password">
+						<div class="icon"><i class="fa fa-lock lock"></i></div>
+						<input type="password" placeholder="Confirm Password" class="text_box">
+					</div>
+
+					<!-- Input radio button -->
+					<div class="radio">
+						<!-- <i class="fa fa-lock lock"></i> -->
+						<input type="radio" class="radio-button_first" name="gender_1">
+						<lable class="male">Male</lable>
+						<input type="radio" class="radio-button" name="gender_2">
+						<lable>Femal</lable>
+					</div>
+					
+					
+					<!-- checkbox -->
+					<div class="checkbox">
+						<input type="checkbox" class="Check-button">
+						<lable class="checkbox_text">I accept the terms and conditios</lable>
+					</div>
+				<!-- submit botton -->
+					<div class="sbumit">
+						<input type="submit" class="button" value="Register">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
