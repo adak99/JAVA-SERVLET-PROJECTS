@@ -49,15 +49,20 @@ public class userInput extends HttpServlet {
             con.close();
 
             PrintWriter out = response.getWriter();
-            out.println("<html><body>"
-                    + "<h1>Successfully insert you data</h1>\n"
+            out.println("<html><head><style>"
+                    + "body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }"
+                    + "h1 { color: #4CAF50; text-align: center; }"
+                    + "h4 { color: #555; }"
+                    + "div.container { margin: auto; padding: 20px; width: 50%; background-color: white; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }"
+                    + "</style></head><body>"
+                    + "<div class='container'>"
+                    + "<h1>Successfully inserted your data</h1>\n"
                     + "<h4>Id: " + id + "</h4>\n"
-                    + "<h4>Name: " + name + "</h4\n"
+                    + "<h4>Name: " + name + "</h4>\n"
                     + "<h4>Age: " + age + "</h4>\n"
                     + "<h4>Email: " + email + "</h4>\n"
                     + "<h4>Mobile number: " + number + "</h4>\n"
-                    + "</body></html>");
-
+                    + "</div></body></html>");
         } catch (Exception e) {
             e.printStackTrace();
         }
