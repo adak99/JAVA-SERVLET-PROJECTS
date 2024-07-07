@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -20,7 +19,7 @@ public class userInput extends HttpServlet {
         super();
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
             System.out.println("From connect_dataBase");
@@ -28,15 +27,21 @@ public class userInput extends HttpServlet {
 
             PreparedStatement st = con.prepareStatement("Insert into user_data values (?,?,?,?,?)");
 
-            st.setString(1, request.getParameter("id"));
+            String id = request.getParameter("id");
+            String name = request.getParameter("name");
+            String age = request.getParameter("age");
+            String email = request.getParameter("email");
+            String number = request.getParameter("number");
 
-            st.setString(2, request.getParameter("name"));
+            st.setString(1, id);
 
-            st.setString(3, request.getParameter("age"));
+            st.setString(2, name);
 
-            st.setString(4, request.getParameter("email"));
+            st.setString(3, age);
 
-            st.setString(5, request.getParameter("number"));
+            st.setString(4, email);
+
+            st.setString(5, number);
 
             st.executeUpdate();
 
@@ -44,11 +49,17 @@ public class userInput extends HttpServlet {
             con.close();
 
             PrintWriter out = response.getWriter();
-            out.println("<html><body>Successfully insert" + "</br></body></html>");
+            out.println("<html><body>"
+                    + "<h1>Successfully insert you data</h1>\n"
+                    + "<h4>Id: " + id + "</h4>\n"
+                    + "<h4>Name: " + name + "</h4\n"
+                    + "<h4>Age: " + age + "</h4>\n"
+                    + "<h4>Email: " + email + "</h4>\n"
+                    + "<h4>Mobile number: " + number + "</h4>\n"
+                    + "</body></html>");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
